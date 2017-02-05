@@ -18,14 +18,14 @@ gulp.task("compile-sass", function() {
           browsers: ['last 2 versions'],
           cascade: false
         }))
-        //.pipe(cssnano())
+        .pipe(cssnano())
         .pipe(gulp.dest(""));
 });
 
 gulp.task("compile-js", function() {
     gulp.src(['bower_components/jquery/dist/jquery.js', 'bower_components/flexslider/jquery.flexslider-min.js', 'src/js/*.js'])
         .pipe(concat('min.js'))
-        //.pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('src/'));
     //.pipe(browsersync.stream());
 });

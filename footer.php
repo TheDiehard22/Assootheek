@@ -126,7 +126,7 @@
   <span class="callus__span">bel ons!</span>
 </a>
 
-  <script src="https://www.advieskeus.nl/content/banner/89f72ed1-129d-40c1-b697-ef358c9896c3/linkkantoor/A_AcDBAEQAAEgASABIAEgCxFpbG9uYS1icmVnAAA/" type="text/javascript"></script>
+  <script src="https://www.advieskeus.nl/content/banner/89f72ed1-129d-40c1-b697-ef358c9896c3/linkkantoor/A_AcDBAEQAAEgASABIAEgCxFpbG9uYS1icmVnAAA/" type="text/javascript" async></script>
 
   <?php wp_footer(); ?>
 </body>
