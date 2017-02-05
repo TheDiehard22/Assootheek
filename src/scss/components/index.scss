@@ -1,0 +1,97 @@
+.slider-container {
+    overflow-x: hidden;
+    padding: 0;
+}
+
+.intro {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__wrapper {
+      margin: auto;
+    }
+
+    &__heading {
+        text-align: center;
+        text-transform: uppercase;
+        font-weight: bold;
+        font-size: 32px;
+        letter-spacing: -2px;
+    }
+
+    &__subheading {
+      display: block;
+      text-align: center;
+      font-weight: bold;
+      color: $text-grey;
+      margin-bottom: 30px;
+    }
+
+    &__content {
+      margin-bottom: 50px;
+      ul {
+        margin: 10px 0;
+      }
+    }
+
+    .content__belons {
+      @media(max-width: $lg){
+        display: block;
+      }
+    }
+
+    object{
+      @media(max-width: $sm){
+        display: none;
+      }
+    }
+
+}
+
+.newsslider {
+  background-color: $grey;
+  margin: 50px 0 0;
+  padding: 50px 0;
+  overflow: hidden;
+
+  .flexslider {
+    background: transparent;
+  }
+
+  &__heading {
+    margin-bottom: 30px;
+    font-size: 26px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  &__wrapper {
+    @include clearfix();
+  }
+
+  &__item {
+
+  }
+
+  &__content {
+    padding: 20px 30px;
+
+    .more-link {
+      margin-top: 15px;
+      text-transform: uppercase;
+      font-weight: bold;
+      font-size: 14px;
+    }
+  }
+
+  &__title {
+    font-weight: bold;
+    padding-bottom: 10px;
+    margin-bottom: 30px;
+    border-bottom: solid 2px $orange;
+  }
+
+
+}

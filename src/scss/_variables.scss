@@ -1,0 +1,24 @@
+@import "mixins";
+
+//COLORS
+$white: #fff;
+$black: #000;
+
+$grey: #F5F5F5;
+$text-grey: rgba($black, .6);
+
+$text-color: #404040;
+
+$orange: #e64101;
+
+$secondary: #534f5d;
+$secondary-lighter: #5b5765;
+
+//FONT
+$font: 'Open Sans', sans-serif;
+
+$xs: 0;
+$sm: 576px;
+$md: 768px;
+$lg: 992px;
+$xl: 1200px;

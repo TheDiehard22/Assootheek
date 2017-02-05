@@ -1,0 +1,60 @@
+@import "../variables";
+
+.flexslider {
+  border: none;
+
+  .slides {
+
+    &__item {
+      height: 500px;
+      width: 100%;
+      background-position: center center;
+      background-size: cover;
+
+      @media(max-width: $md){
+        height: 300px;
+      }
+    }
+
+    &__wrapper {
+      position: absolute;
+      bottom: 0;
+      width: 100%;
+      background: $grey;
+      border: solid 1px #dedede;
+      padding: 20px 15px;
+
+      @media(min-width: $lg) {
+        max-width: 600px;
+        left: 0;
+        right: 0;
+        bottom: 50px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    }
+
+    &__title {
+      font-size: 18px;
+      font-weight: bold;
+      text-transform: uppercase;
+    }
+
+    &__desc {
+      font-size: 16px;
+    }
+
+    .flex-active-slide {
+      position: relative;
+    }
+  }
+
+  .flex-direction-nav {
+    .flex-prev, .flex-next {
+      height: 50px;
+      @media(max-width: $md){
+        top: 30%;
+      }
+    }
+  }
+}

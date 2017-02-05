@@ -1,0 +1,32 @@
+@import "../variables";
+
+body, html, * {
+  font-family: $font;
+}
+
+p {
+  margin: 0;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+ul {
+  margin: 0;
+}
+
+.line {
+  position: relative;
+  height: 2px;
+  background-color: $orange;
+}
+
+.show {
+  display: block !important;
+}

@@ -1,0 +1,24 @@
+{
+  "name": "assootheek",
+  "authors": [
+    "Justin Breg <justin.breg@ziggo.nl>"
+  ],
+  "description": "assootheek",
+  "main": "",
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "jquery": "^3.1.0"
+  },
+  "dependencies": {
+    "susy": "^2.2.12",
+    "normalize-scss": "normalize.scss#^6.0.0"
+  }
+}

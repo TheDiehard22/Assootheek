@@ -1,0 +1,24 @@
+/*
+Theme Name: Assootheek
+Author: Justin Breg
+Description: Assootheek thema
+Version: 1
+Tags: assurantie kantoor
+Text Domain: Assootheek
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+@import "components/reset";
+
+@import "../../bower_components/bootstrap/scss/bootstrap";
+@import "../../bower_components/flexslider/flexslider.scss";
+
+@import "../../lib/font-awesome-4.7.0/scss/font-awesome";
+@import url( 'https://fonts.googleapis.com/css?family=Open+Sans:300,400,700');
+
+@import "components/base";
+@import "components/slider";
+@import "components/header";
+@import "components/index";
+@import "components/content";
+@import "components/footer";
