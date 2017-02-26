@@ -2,13 +2,15 @@
 <html lang="nl">
   <head>
     <meta charset="utf-8">
-    <title>Assootheek</title>
+    <title>Assurantiekantoor Medemblik - Assootheek</title>
 
     <meta name="theme-color" content="#e64101">
-
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <link rel="alternate" hreflang="nl" href="http://assootheek.nl" />
+    <meta name="robots" content="index,follow">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no, user-scalable=0">
-    <meta name="description" content="Oneindig financieel advies - Uw adviseur voor hypotheken sparen en verzekeren.">
-    <meta name="keywords" content="een, wij, van, voor, assootheek, met, adviseur, hypotheken, verzekeren, medemblik, hypotheekadviseur">
+    <meta name="description" content="Oneindig financieel advies - Uw adviseur voor hypotheken sparen en verzekeren in Medemblik en omgeving.">
+    <meta name="keywords" content="een, wij, van, voor, assootheek, met, adviseur, hypotheken, verzekeren, medemblik, hypotheekadviseur, hypotheek medemblik, assootheek, hypotheekadviseur medemblik">
 
     <?php wp_head(); ?>
 
