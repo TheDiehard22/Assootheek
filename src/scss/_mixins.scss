@@ -20,6 +20,23 @@
     box-shadow: 0 4px 3px 3px rgba($black, .1);
 }
 
+@mixin mq-min($bp){
+  @media(min-width: $bp) {
+    @content;
+  }
+}
+
+@mixin mq-max($bp){
+  @media(max-width: $bp) {
+    @content;
+  }
+}
+
+@mixin mq($bp-min, $bp-max){
+  @media(min-width: $bp-min) and (max-width: $bp-max) {
+    @content;
+  }
+}
 
 @mixin clearfix {
   &:after {

@@ -3,59 +3,48 @@ $(function() {
     var header;
     var headerHeight;
     var window_width;
-    var menuOffset = $('.header__top').height() + $('.header__middle').height();
 
-    function calcHeaderHeight() {
-        menuOffset = $('.header__top').height() + $('.header__middle').height();
-    }
-
-    function menuPos() {
-        var scrollProgress = $(this).scrollTop();
-        if (window_width > 992) {
-            if (scrollProgress > menuOffset) {
-                $('body').css('padding-top', menuOffset);
-                $('.header').addClass('header--sticky');
-            } else {
-                $('body').css('padding-top', 0);
-                $('.header').removeClass('header--sticky');
-            };
-        } else {
-            $('.header').addClass('header--sticky');
-        };
-    };
 
     function calcWindowWidth() {
         window_width = $(window).width();
     }
 
     $(window).scroll(function() {
-        menuPos();
+        /*menuPos();*/
     });
 
     $(window).resize(function() {
-        calcHeaderHeight();
-        calcWindowWidth();
+        /*calcHeaderHeight();
+        calcWindowWidth();*/
     });
 
     $(document).ready(function() {
-
-        calcWindowWidth();
-        menuPos();
-
-        header = $('.header');
+        header = $('.newheader');
 
         //HAMBURGER
-        var hamburger = $('.header__hamburger');
-        var submenu = $('.header__menu');
+        var hamburger = $('.newheader__button');
+        var submenu = $('.newheader__list');
+        var dropdownToggle = $('.newheader__item--dropdown');
+        var dropdown = $('.newheader__dropdown');
+        var dropdownActive = 'newheader__dropdown--open';
 
         hamburger.on('click', function() {
-            if (!submenu.hasClass('header__menu--open')) {
-                submenu.addClass('header__menu--open');
+          console.log('test');
+            if (!submenu.hasClass('newheader__list--open')) {
+                submenu.addClass('newheader__list--open');
             } else {
-                submenu.removeClass('header__menu--open');
+                submenu.removeClass('newheader__list--open');
             }
         });
         //END HAMBURGER
+
+        dropdownToggle.on('click', function() {
+          if (!dropdown.hasClass(dropdownActive)) {
+            dropdown.addClass(dropdownActive);
+          } else {
+            dropdown.removeClass(dropdownActive);
+          }
+        });
 
     });
 });
