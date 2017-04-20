@@ -88,20 +88,20 @@
       <div class="col-xs-12">
         <div class="footer__contact">
         <div class="row">
-          <div class="col-lg-6">
+          <div class="col-md-6">
               <table class="footer__mailtable">
                 <tr>
                   <td class="footer__name">Chris</td>
                   <td class="footer__email">
                     <a class="footer__link" href="mailto:chris@assootheek.nl">chris@assootheek.nl</a>
-		                <a href="tel:0640825922" class="footer__link">06 408 25 922</span>
+		                <a href="tel:0640825922" class="footer__link">06 408 25 922</a>
                   </td>
                 </tr>
                 <tr>
                   <td class="footer__name">Ilona</td>
                   <td class="footer__email">
                     <a class="footer__link" href="mailto:ilona@assootheek.nl">ilona@assootheek.nl</a>
-		                <a href="tel:0640736477" class="footer__link">06 407 36 477</span>
+		                <a href="tel:0640736477" class="footer__link">06 407 36 477</a>
                   </td>
                 </tr>
                 <tr>
@@ -111,6 +111,9 @@
                   </td>
                 </tr>
               </table>
+            </div>
+            <div class="col-md-6">
+              <img class="footer__EFA" src="<?php echo get_template_directory_uri(); ?>/src/img/Logo_EFA.png" alt="Logo Financieel adviseur" />
             </div>
           </div>
         </div>
