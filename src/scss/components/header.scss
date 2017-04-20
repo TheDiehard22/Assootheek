@@ -1,231 +1,8 @@
 @import "../variables";
 
-.header {
-    position: relative;
-    box-shadow: 0 0 12px 3px rgba($black, .16);
-    z-index: 10000;
-    @media(max-width: $lg) {
-        .header__middle,
-        .header__top {
-            display: none;
-        }
-    }
-
-    &--sticky {
-        position: fixed;
-        top: 0;
-        width: 100%;
-        background-color: $white;
-
-        .header__middle,
-        .header__top {
-            display: none;
-        }
-
-        .header__menuitem--call {
-            display: block;
-        }
-    }
-
-    &__hamburger {
-        display: inline-block;
-        padding: 0 10px;
-        margin-right: 15px;
-        @media(min-width: $lg) {
-            display: none;
-        }
-
-        &:before() {
-            @include fa-icon();
-            content: "\f0c9";
-            font-size: 24px;
-            vertical-align: sub;
-        }
-    }
-
-    &__top {
-        height: 40px;
-        line-height: 40px;
-        background-color: $grey;
-        border-bottom: solid 1px #dedede;
-    }
-
-    &__social {
-        text-align: right;
-    }
-
-    &__social-listitem {
-        list-style-type: none;
-        display: inline-block;
-    }
-
-    &__social-link {
-        font-size: 14px;
-        vertical-align: middle;
-
-        &:last-of-type {
-            margin-left: 15px;
-        }
-
-        &:before {
-            @include fa-icon();
-            font-size: 18px;
-            margin-right: 10px;
-            vertical-align: middle;
-        }
-
-        &--facebook {
-            &:before {
-                content: "\f230";
-            }
-        }
-
-        &--bel {
-            &:before {
-                content: "\f095";
-            }
-        }
-    }
-
-    &__middle {
-        padding: 10px 15px;
-        display: flex;
-    }
-
-    &__logo-wrapper {
-        display: flex;
-        flex: 1 1 auto;
-    }
-
-    &__logo {
-        height: 100px;
-    }
-
-    &__logo-small-wrapper {
-        @media(min-width: $lg) {
-            display: none;
-        }
-    }
-
-    &__logo-small {
-        height: 25px;
-    }
-
-    &__cta-wrapper {
-        display: flex;
-        flex: 1 1 100%;
-        justify-content: flex-end;
-        align-items: center;
-    }
-
-    &__cta {
-        padding: 15px 50px;
-        border-top: solid 1px $orange;
-        border-bottom: solid 1px $orange;
-        font-size: 16px;
-        color: $text-color;
-        text-transform: uppercase;
-        transition: background 0.2s ease-in;
-        font-weight: 700;
-
-        &:hover {
-            background: $orange;
-            color: $white;
-        }
-    }
-
-    &__bottom {
-        border-top: solid 3px $orange;
-        @media(max-width: $lg) {
-            height: 53px;
-            line-height: 50px;
-            background-color: $white;
-            border-top: none;
-        }
-    }
-
-    &__menu {
-        display: flex;
-        margin-bottom: 0;
-        @media(max-width: $lg) {
-            display: none;
-        }
-
-        &--open {
-            position: fixed;
-            display: block;
-            padding-top: 25%;
-            background-color: $white;
-            top: 50px;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            @media(max-width: $lg) {
-                body {
-                    overflow: hidden;
-                }
-            }
-
-            .header__menulink {
-                text-transform: uppercase;
-                font-weight: 700;
-                font-size: 18px;
-            }
-
-            .header__menuitem--call {
-                display: none;
-            }
-        }
-    }
-
-    &__menuitem {
-        flex: 0 1 100%;
-        text-align: center;
-        height: 70px;
-        line-height: 70px;
-
-        &--call {
-            display: none;
-            flex: 0 1 40%;
-            width: 0;
-        }
-    }
-
-    &__menulink {
-        display: inline-block;
-        width: 100%;
-        height: 100%;
-        color: $text-color;
-        background-image: -webkit-linear-gradient(transparent 50%, $orange 50%, $orange 95%, darken($orange, 10) 95%);
-        background-size: 100% 200%;
-        background-position: top center;
-        transition: all 0.15s ease-in;
-
-        &--haschild {
-            &:after {
-                @include fa-icon();
-                content: "\f107";
-                font-size: 14px;
-                margin-left: 10px;
-            }
-        }
-
-        &:hover {
-            background-position: bottom center;
-            color: $white;
-        }
-    }
-
-    &__callme {
-        &:before {
-            @include fa-icon();
-            content: "\f095";
-            font-size: 20px;
-        }
-    }
-}
-
 .newheader {
+    position: fixed;
+    top: 0;
     width: 100%;
     height: 64px;
     display: flex;
@@ -233,8 +10,9 @@
     align-self: flex-start;
     background-color: $white;
     border-bottom: 2px solid $orange;
-    padding: 0 8px;
+    padding: 0 30px;
     box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    z-index: 999;
 
     &__button {
         background: none;
@@ -263,11 +41,7 @@
     }
 
     &__assoo {
-      height: 30px;
-
-      @include mq-max($sm) {
-        height: 25px;
-      }
+      height: 23px;
     }
 
     &__list {

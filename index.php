@@ -20,10 +20,11 @@
         </div>
       </div>
   </div>
-  <div class="col-lg-4">
+  <div class="col-lg-4 column-mobile">
     <a href="tel:0640825922">
       <img class="content__belons" src="<?php echo get_template_directory_uri(); ?>/src/img/belmailapp.png" alt="bel, mail of app ons">
     </a>
+    <script src="https://www.advieskeus.nl/content/banner/89f72ed1-129d-40c1-b697-ef358c9896c3/scoreuitgebreidenreviews/A_AcDBAEAAwQBMAEgASABIAEgDRFjaHJpcy1kcnVpamYAAA/" type="text/javascript"></script>
     <object data="https://rentestanden-nn.campaign.alion.nl/201307_intermediair/gfx/nn-internetsparen-v2-r001-300x250.swf" type="application/x-shockwave-flash" width="300" height="250"><param name="movie" value="https://rentestanden-nn.campaign.alion.nl/201307_intermediair/gfx/nn-internetsparen-v2-r001-300x250.swf"><param name="quality" value="high"><param name="menu" value="false"><param name="height" value="250"><param name="width" value="300"><param name="allowFullScreen" value="true"><param name="allowscriptaccess" value="always"><param name="wmode" value="transparent"><param name="FlashVars" value="clickTag=http://www.assootheek.nl/index.php/contact">
     	<a><img src="https://rentestanden-nn.campaign.alion.nl/201307_intermediair/gfx/nn-internetsparen-v2-r001-300x250.gif" alt="" width="300" height="250" border="0"></a>
     </object>

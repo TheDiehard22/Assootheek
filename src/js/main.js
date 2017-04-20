@@ -1,12 +1,3 @@
-$(document).ready(function() {
-
-
-
-
-  $('.usps__list').after($('iframe'));
-
-});
-
 $(window).on('load', function() {
 
   $('#flexslider').flexslider({
