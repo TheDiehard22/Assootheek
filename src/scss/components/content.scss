@@ -1,8 +1,5 @@
 .intro {
     &__content {
-      @media(max-width: $sm){
-        overflow-x: scroll;
-      }
 
         ul {
             padding-left: 20px;

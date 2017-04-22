@@ -113,7 +113,7 @@
               </table>
             </div>
             <div class="col-md-6">
-              <img class="footer__EFA" src="<?php echo get_template_directory_uri(); ?>/src/img/Logo_EFA.png" alt="Logo Financieel adviseur" />
+              <img class="footer__EFA" src="<?php echo get_template_directory_uri(); ?>/src/img/EFA_KEURMERK_DEF_FC_HR.png" alt="Logo Financieel adviseur" />
             </div>
           </div>
         </div>

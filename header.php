@@ -22,7 +22,8 @@
         <i class="fa fa-bars newheader__menu"></i>
       </button>
       <a class="newheader__logo" href="/">
-        <img src="<?php echo get_template_directory_uri(); ?>/src/img/logo-text.jpg" alt="Assootheek logo" class="newheader__assoo">
+        <img src="<?php echo get_template_directory_uri(); ?>/src/img/logo-text.jpg" alt="Assootheek logo" class="hidden">
+        <div class="newheader__logo"></div>
       </a>
       <span style="flex:1;"></span>
       <ul class="newheader__list">

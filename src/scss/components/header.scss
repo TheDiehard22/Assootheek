@@ -18,9 +18,20 @@
     &--scrolled {
       height: 64px;
 
-      .newheader__assoo {
+      .newheader__logo {
         height: 30px;
-        width: 246px;
+        width: 193px;
+        /*background-image: url('http://assootheek.nl/wp-content/themes/Assootheek/src/img/logo-notext.jpg');*/
+
+        @include mq-max($sm) {
+
+        }
+      }
+
+      .newheader__list {
+        @include mq-max($lg) {
+          top: 64px;
+        }
       }
     }
 
@@ -45,15 +56,16 @@
     }
 
     &__logo {
-        color: $text-color;
-        font-weight: 700;
-        font-size: 20px;
-    }
+      background-image: url('http://assootheek.nl/wp-content/themes/Assootheek/src/img/logo-text.jpg');
+      height: 70px;
+      width: 280px;
+      background-size: cover;
+      transition: ease-in .4s all;
 
-    &__assoo {
-      height: 84px;
-      max-width: 340px;
-      transition: opacity .4s ease-in;
+      @include mq-max($sm) {
+        width: 230px;
+        height: 50px;
+      }
     }
 
     &__list {
@@ -69,7 +81,7 @@
             background-color: #e5e5e5;
             transform: translateX(-100%);
             transition: ease-in 0.2s transform;
-            top: 64px;
+            top: 94px;
 
             &--open {
                 transform: translateX(0);
@@ -121,7 +133,7 @@
 
     &__listitem {
         display: inline-block;
-        margin-left: 30px;
+        margin-left: 10px;
         @include mq-max($lg) {
             margin-left: 0;
             text-align: center;

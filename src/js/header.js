@@ -10,20 +10,11 @@ $(function() {
     }
 
     $(window).scroll(function() {
-        if ($(window).scrollTop() > 1) {
-          $('.newheader').addClass('newheader--scrolled');
-
-          setTimeout(function() {
-            $('.newheader__assoo').attr("src", $(location).attr('href') + "wp-content/themes/Assootheek/src/img/logo-notext.jpg");
-
-          }, 200);
-        } else {
-          $('.newheader').removeClass('newheader--scrolled');
-          setTimeout(function() {
-            $('.newheader__assoo').attr("src", $(location).attr('href') + "wp-content/themes/Assootheek/src/img/logo-text.jpg");
-
-          }, 200);
-        }
+      if ($(window).scrollTop() > 1) {
+        $('.newheader').addClass('newheader--scrolled');
+      } else {
+        $('.newheader').removeClass('newheader--scrolled');
+      }
     });
 
     $(window).resize(function() {

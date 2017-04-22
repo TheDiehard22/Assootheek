@@ -2,6 +2,7 @@
 
 body, html, * {
   font-family: $font;
+  transition: padding .4s ease-in;
 }
 
 body {
@@ -27,6 +28,14 @@ a {
 
 ul {
   margin: 0;
+}
+
+.hidden {
+  position: absolute;
+  opacity: 0;
+  pointer-events: none;
+  width: 0;
+  height: 0;
 }
 
 .line {
